@@ -1,0 +1,29 @@
+.double-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.code-section {
+    float: left;
+    text-align: right;
+
+    background-color: rgba(239, 200, 200, 0.2);
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    text-align: left;
+
+    width: 48%;
+}
+
+.markdown-section {
+    float: right;
+    text-align: right;
+
+    background-color: rgba(239, 200, 200, 0.2);
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    text-align: left;
+
+    width: 48%;
+}

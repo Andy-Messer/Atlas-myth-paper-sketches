@@ -1,0 +1,66 @@
+.font-face-gm {
+    font-family: "CollectionNewStyle";
+}
+
+/* Для расположения по центрy */
+.Menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+}
+
+/* БООльшая кнопка */
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+    font-family: 'CollectionNewStyle';
+    width: 30vw;
+    height: 30vw;
+    font-size: 11vw;
+}
+
+/* Расположение кнопки */
+.button_login_register {
+    background-color: rgba(189, 211, 204, 0.04);
+    border-radius: 50%;
+    position: relative;
+    top: -14.75vw;
+    left: -15vw;
+}
+
+/* Поведение кнопки при наведении */
+.button_login_register:hover {
+    background-color: rgba(239, 200, 200, 0.2);
+}
+
+/* Название сервиса */
+.h1-style {
+    font-family: 'CollectionNewStyle';
+    font-size: 4vw;
+    color: white;
+    width: 12vw;
+    height: 4vw;
+    padding-left: 3vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    background-color: rgba(234, 233, 229, 0.2);
+    position: sticky;       
+}
+
+/* Бэкгранд */
+video {
+    object-fit:contain;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
