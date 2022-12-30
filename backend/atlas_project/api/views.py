@@ -43,23 +43,12 @@ class Profile_x_NoteCreate(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         user = profile_x_note.objects.get(user=self.request.user)
-        serializer.save(user=self.request.user)
+        serializer.save(user=user)
 
 
 class ProfileList(generics.ListAPIView):
     serializer_class = ProfileSerializer
     queryset = profile.objects.all()
-
-
-class SelfProfile(generics.ListAPIView):
-    permission_classes = [IsAuthenticated]
-    serializer_class = ProfileSerializer
-    queryset = profile.objects.all()
-
-    def get_queryset(self):
-        queryset = super(SelfProfile, self).get_queryset()
-        return queryset.filter(user=self.request.user)
-
 
 class ProfileCreate(generics.CreateAPIView):
     serializer_class = CreateProfileSerializer

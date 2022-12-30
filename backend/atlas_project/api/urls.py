@@ -10,6 +10,5 @@ urlpatterns = [
     path('create_profile_x_note/', Profile_x_NoteCreate.as_view()),
 
     path('get_profiles/', ProfileList.as_view()),
-    path('get_my_profile/', SelfProfile.as_view()),
     path('create_profile/', ProfileCreate.as_view()),
 ]

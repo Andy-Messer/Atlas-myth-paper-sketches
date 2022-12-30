@@ -17,7 +17,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 class CreateProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = profile
-        fields = 'username'
+        fields = '__all__'
 
 
 class Profile_x_NoteSerializer(serializers.ModelSerializer):

@@ -12,7 +12,10 @@
     border: 1px solid #bdbdbd;
     border-radius: 0.25rem;
     text-align: left;
+    padding: 0.5rem;
 
+
+    color: white;
     width: 48%;
 }
 
@@ -24,6 +27,8 @@
     border: 1px solid #bdbdbd;
     border-radius: 0.25rem;
     text-align: left;
+    padding: 0.5rem;
 
+    color: white;
     width: 48%;
 }
